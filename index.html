@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./uikit/css/uikit.min.css">
+    <link rel="stylesheet" href="./uikit/css/uikit.css">
+    <script defer src="./uikit/js/uikit.min.js">
+    </script>
+    <script defer src="./uikit/js/uikit.js">
+    </script>
+    <script defer src="./main.js"></script>
+    <title>Test-work</title>
+</head>
+
+<body class="page">
+    <div class="popup-container">
+        <div class="popup">
+            <form action="#" class="form">
+                <fieldset class="uk-fieldset">
+                    <div class="popup__header">
+                        <legend class="popup__legend">Купить в один клик</legend>
+                        <div class="popup__close"><img src="./src/close.svg" alt="menu" uk-svg="stroke-animation: true"></div>
+                    </div>
+                    <div class="popup__hr"></div>
+                    <div class="popup_input-block">
+                        <input class="popup__input _name _req" name="name" type="text" placeholder="Имя">
+                        <input class="popup__input _email _req" name="email" type="text" placeholder="Электронная почта">
+                        <input class=" popup__input _phone _req" name="phone" type="text" placeholder="+7 (___) __ __ ___">
+                        <p class="errortext"></p>
+                    </div>
+                    <input type="submit" class="popup__button  uk-width-1-1" value="Купить">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="navbar page_mt25">
+            <div class="navbar__logo">
+                <img src="./src/Logo.svg" alt="logo">
+            </div>
+            <div class="navbar__menu-block">
+                <svg class="navbar__menu-close page-hidden" uk-svg="stroke-animation: true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="24"><path d="M0.000244141 0H24.0002V24H0.000244141V0Z" fill="#F44336"/>
+                    </mask><g mask="url(#mask0)">
+                    <path d="M19.0002 6.41L17.5902 5L12.0002 10.59L6.41024 5L5.00024 6.41L10.5902 12L5.00024 17.59L6.41024 19L12.0002 13.41L17.5902 19L19.0002 17.59L13.4102 12L19.0002 6.41Z" fill="#F44336"/>               </g>
+                    </svg>
+
+                <img class="navbar__menu-open" src="./src/menu.svg" alt="menu" uk-svg="stroke-animation: true">
+                <button class="btn navbar__menu-btn">Меню</button>
+            </div>
+        </div>
+        <div class="menu page_menu-position page-hidden uk-animation-slide-top">
+            <div class="menu__section">
+                <span class="menu__heading">Каталог</span>
+                <div class="menu__line"></div>
+                <button class="btn menu__product product" data-deps="main__flasks">Колбы</button>
+                <button class="btn menu__product product" data-deps="main__bowls">Чаши</button>
+                <button class="btn menu__product product" data-deps="main__сoals">Угли</button>
+            </div>
+            <div class="menu__section">
+                <span class="menu__heading">Разделы</span>
+                <div class="menu__line"></div>
+                <button class="btn menu__product">Контакты</button>
+                <button class="btn menu__product">Оплата</button>
+                <button class="btn menu__product">Доставка</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main__menu">
+                <span class="main__tip">Выберите:</span>
+                <button class="btn main__product product" data-deps="main__flasks">Колбы</button>
+                <button class="btn main__product product" data-deps="main__bowls">Чаши</button>
+                <button class="btn main__product product" data-deps="main__сoals">Угли</button>
+            </div>
+            <div class="main__content">
+                <div class="main__flasks">
+
+                    <span class="main__heading main_front-text  uk-animation-slide-left-small">Мы создаем качественные</span>
+                    <img class="main__image4 main_medium uk-animation-slide-top" src="./src/1.png" alt="4">
+                    <span class="main__heading main_back-text uk-animation-slide-right-small">продукты <br> для кальяна.</span>
+                </div>
+                <div class="main__bowls hidd">
+                    <img class="main__image1 main_medium uk-animation-slide-top" src="./src/flasks/8.png" alt="1">
+                    <img class="main__image2 main_medium uk-animation-slide-right" src="./src/flasks/121.png" alt="2">
+                    <img class="main__image3 main_medium uk-animation-slide-bottom-small" src="./src/flasks/5.png" alt="3">
+                    <span class="main__heading main_front-text  uk-animation-slide-left-small">Мы создаем качественные</span>
+                    <span class="main__heading main_back-text uk-animation-slide-right-small">продукты <br> для кальяна.</span>
+                </div>
+                <div class="main__сoals hidd">
+                    <span class="main__heading  uk-animation-slide-right main_front-text">Мы создаем качественные</span>
+                    <img class="main__image5  uk-animation-slide-top main_medium" src="./src/index-coal.png" alt="5">
+
+                    <span class="main__heading  uk-animation-slide-left main_back-text">продукты <br> для кальяна.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

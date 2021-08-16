@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;1,700&display=swap");
+.page {
+  height: 100vh;
+  font-family: "IBM Plex Sans", sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.page_bg-gray {
+  background: #F4F4F4;
+}
+
+.page_mt25 {
+  padding-top: 25px;
+}
+
+.page_menu-position {
+  float: right;
+  margin-top: 90px;
+}
+
+.page-hidden {
+  display: none !important;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  color: #262626;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 300;
+}
+
+.hidd {
+  display: none;
+}
+
+.navbar {
+  color: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__menu-block {
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  color: #262626;
+}
+
+.main__tip {
+  margin-bottom: 16px;
+  color: #A0A0A0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main__menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_front-text {
+  z-index: 10;
+}
+
+.main_medium {
+  z-index: 5;
+}
+
+.main_back-text {
+  z-index: 1;
+}
+
+.main__product {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 55px;
+  text-align: left;
+}
+
+.main__product:hover {
+  color: #F44336;
+}
+
+.main__heading {
+  font-weight: 700;
+  font-size: 127px;
+  line-height: 150px;
+  position: relative;
+}
+
+.main__image1 {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+
+.main__image2 {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+}
+
+.main__image3 {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+}
+
+.main__image4 {
+  position: absolute;
+  height: 100vh;
+  top: -250px;
+  left: 0;
+}
+
+.main__image5 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.main__content {
+  display: flex;
+  align-items: center;
+  width: 850px;
+  height: 100%;
+}
+
+.main__flasks {
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 588px;
+  height: 380px;
+}
+
+.menu-btn_red {
+  color: #F44336;
+}
+
+.menu__heading {
+  font-size: 16px;
+  line-height: 24px;
+  color: #767676;
+}
+
+.menu__product {
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.menu__product:hover {
+  color: #F44336;
+}
+
+.menu__line {
+  margin-bottom: 24px;
+  margin-top: 8px;
+  height: 1px;
+  background-color: #E0E0E0;
+}
+
+.popup-container {
+  position: absolute;
+  display: none;
+  background-color: rgba(158, 158, 158, 0.8);
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form {
+  width: 288px;
+  background: #F4F4F4;
+  box-sizing: border-box;
+}
+
+.popup__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.popup__legend {
+  font-size: 16px;
+  line-height: 24px;
+  color: #262626;
+}
+
+.popup__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.popup__hr {
+  height: 1px;
+  background-color: #E0E0E0;
+}
+
+.popup_input-block {
+  padding: 24px 0;
+}
+
+.popup__input {
+  display: block;
+  width: 240px;
+  height: 40px;
+  padding: 0 16px;
+  margin: 8px auto;
+  border: 1px solid #E0E0E0;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.popup__button {
+  background-color: #F44336;
+  border: none;
+  cursor: pointer;
+  color: white;
+  height: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+.errortext {
+  color: #F44336;
+  text-align: center;
+}
+
+._error {
+  box-shadow: 0 0 15px red;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 95vw;
+  }
+
+  .page_menu-position {
+    float: right;
+    margin-top: 30px;
+  }
+
+  .menu {
+    width: 100%;
+    height: 100%;
+  }
+
+  .main__heading {
+    display: none;
+  }
+
+  .main__image1 {
+    width: 189px;
+    height: 226px;
+    top: 10%;
+    left: 60%;
+    z-index: 3;
+  }
+
+  .main__image2 {
+    width: 179px;
+    height: 195px;
+    top: 45%;
+    left: 60%;
+    z-index: 2;
+  }
+
+  .main__image3 {
+    width: 188px;
+    height: 188px;
+    top: 70%;
+    left: 40%;
+  }
+
+  .main__image4 {
+    height: 70vh;
+    top: 0;
+    position: relative;
+    transform: scaleX(-1);
+  }
+
+  .main__image5 {
+    top: 50%;
+    left: 30%;
+    z-index: 2;
+  }
+}
+/*# sourceMappingURL=main.css.map */
